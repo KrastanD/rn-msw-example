@@ -15,10 +15,10 @@ export const handlers = [
   rest.get("https://example.com/cookie", (req, res, ctx) => {
     return res(ctx.status(200), ctx.json({ message: "Jimbo34" }));
   }),
-  rest.post("http://192.168.0.105:8081/symbolicate", (req, res, ctx) => {
+  rest.post("*/symbolicate", (req, res, ctx) => {
     return res(ctx.status(200));
   }),
-  rest.post("http://192.168.0.105:8081/logs", (req, res, ctx) => {
+  rest.post("*/logs", (req, res, ctx) => {
     return res(ctx.status(200));
   }),
 ];
