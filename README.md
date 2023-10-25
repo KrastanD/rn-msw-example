@@ -16,7 +16,3 @@ In the `msw-2.0-with-storybook` branch I added storybook to the `msw-2.0` branch
 - To run tests: `npm run test`
 - To run app in development: `npm start`
 - To run storybook: `npm run storybook`
-
-### Notes:
-
-- If you see MSW Warnings in console - update the handlers in `mocks/handlers.js` with an IP address to match the IP of the expo app (which msw will tell you in the warnings).

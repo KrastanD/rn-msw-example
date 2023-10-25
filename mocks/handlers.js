@@ -14,10 +14,10 @@ export const handlers = [
   http.get("https://example.com/cookie", () => {
     return HttpResponse.json({ message: "Jimbo34" }, { status: 200 });
   }),
-  http.post("http://192.168.0.105:8081/symbolicate", () => {
+  http.post("*/symbolicate", () => {
     return HttpResponse.json(null, { status: 200 });
   }),
-  http.post("http://192.168.0.105:8081/logs", () => {
+  http.post("*/logs", () => {
     return HttpResponse.json(null, { status: 200 });
   }),
 ];
